@@ -1,0 +1,104 @@
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    padding: .2rem;
+    margin: .4rem;
+    outline: none;
+    border: 2px solid #16bdca;
+    border-radius: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #27282b;
+    color: #16bdca;
+    transition: all ease-in-out 300ms;
+}
+
+.square:hover {
+    background-color: #16bdca;
+    color: #1a1a1e;
+}
+
+.square:focus {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.board {
+    margin: 100px auto 30px auto;
+    display: block;
+    text-align: center;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.history-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #27282b;
+    color: #16bdca;
+    border: 2px solid #16bdca;
+    border-radius: 10px;
+    padding: .2rem;
+    margin: .4rem;
+    box-sizing: border-box;
+}
+
+.history-btn:hover {
+    background-color: #16bdca;
+    color: #1a1a1e;
+}
+
+.restart-btn {
+    background-color: #27282b;
+    color: #16bdca;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+.restart-btn:hover {
+    background-color: #16bdca;
+    color: #1a1a1e;
+}
+
+
+
+body, #root {
+    width: 100%;
+    height: 100vh;
+
+    font-family: "roboto", "Helvetica", "Helvectica Nue", sans-serif;
+    background-color: #1a1a1e;
+    overflow: hidden;
+    color: #fff;
+}
+
+@media only screen and (max-width: 425px) {
+    .board {
+        width: 100%;
+        margin-top: 50px;
+        box-sizing: border-box;
+
+    }
+
+    .square {
+        width: 90px;
+        height: 90px;
+    }
+}
